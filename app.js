@@ -31,8 +31,7 @@ var getTrivia = function(numIn) {
 	
 	var request = numIn;
 	var result = $.ajax({
-		url: "http://numbersapi.com/",
-		data: request,
+		url: "http://numbersapi.com/" +request+"/",
 		dataType: "jsonp",
 		type: "GET",
 		})
